@@ -24,7 +24,11 @@ h1 {
 	text-align: center;
 }
 
-/* The following font information and color codes are provided for you.  They do not match the prototype exactly, but they are fine to use for the assignment and doing so does not count against you.  They are simply meant to help you save time.  We would like everyone to have as close to a pixel-perfect match to the prototype as possible.  If you do find a font/color that matches more precisely, please share it with the team so we can improve the activity for future applicants.  Thank you!  Happy coding!
+/* The following font information and color codes are provided for you.  They do not match the prototype exactly, 
+but they are fine to use for the assignment and doing so does not count against you.  They are simply meant to 
+help you save time.  We would like everyone to have as close to a pixel-perfect match to the prototype as possible.  
+If you do find a font/color that matches more precisely, please share it with the team so we can improve the activity for 
+future applicants.  Thank you!  Happy coding!
 
 	FONTS:
 	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
@@ -40,3 +44,166 @@ h1 {
 */
 
 /* Your CSS code goes here */
+
+
+
+/* Black box */
+.leftToGo{
+	position: relative;
+	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+	background-color: #424242;
+	padding: 15px;
+	border-radius: 3px;
+	margin: 15px 160px;
+}
+
+/* Triangle for speech bubble */
+.leftToGo::after{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 84%;
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+	border-top-color: #424242;
+	border-bottom: 0;
+	margin-left: -6px;
+	margin-bottom: -6px;
+}
+
+/* Text inside black box */
+.leftToGo p {
+	color: white;
+}
+
+/* font-weight for money still needed */
+#number{
+	font-weight: 500;
+	font-family: 'Alegreya Sans', sans-serif;
+
+	font-size: 1em;
+}
+
+/* Main box container */
+.mainBox {
+	border: 1.5px solid #eaeaea;
+	margin: 15px 160px 0px 160px;
+	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+	color: #777;
+	text-align: left;
+}
+
+/* Padding effecting text inside main box */
+.mainBox p {
+	padding: 0 15px 15px 15px;
+	font-size: 1em;
+}
+
+/* Number of donors styling */
+#donors {
+	font-weight: 700;
+	font-size: .85em;
+}
+
+/* Orange text inside main box */
+#orange-text{
+	color: #EF5F3C;
+	font-weight: 600;
+}
+
+/* Progress bar container */
+#progress {
+	text-align: center;
+	border: .15px solid #eaeaea;
+    background: white;
+    height: 15px;
+    width: auto;
+}
+
+/* Orange progress bar */
+#progress::after {
+    content: '';
+    display: block;
+    background:#EF5F3C;;
+    width: 75%;
+    height: 100%;
+}
+
+.flex-container{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+/* Green Button for donating */
+.donateButton{
+	background-color: #1CBC2C;
+	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+	border-radius: 3px;
+	color: white;
+	padding: 12px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.donateButton:hover{
+	background-color: #EF5F3C;
+}
+
+.donateField{
+	/* margin: 0 auto; */
+	border: none;
+	border:solid 1px #ccc;
+	border-radius: 3px;
+}
+
+/* Placeholders for donation input box */
+
+  ::placeholder {
+	font-size: 16px;
+	font-weight: 900px;
+	padding: 5px;
+	color: #424242;
+  }
+
+
+/* Why give $50? */
+a {
+	text-decoration: none;
+	font-style: italic;
+	color: #20A1D4;
+	font-size: .85em;
+	margin: 15px 0px 0px 0px;
+}
+
+a:hover{
+	color: #EF5F3C;
+}
+
+/* Call to action container */
+.call-to-action-container{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin-left: 160px;
+	margin-right: 160px;
+}
+
+.callToActionButton{
+	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+	border: 1.5px solid #eaeaea;
+	border-radius: 3px;
+	color: #777;
+	padding: 8px 30px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 11px;
+	font-weight: 800;
+}
