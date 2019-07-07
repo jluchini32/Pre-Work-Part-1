@@ -152,10 +152,12 @@ future applicants.  Thank you!  Happy coding!
 	font-weight: 500;
 }
 
+/* Hover over donate button */
 .donateButton:hover{
 	background-color: #EF5F3C;
 }
 
+/* Input field */
 .donateField{
 	/* margin: 0 auto; */
 	border: none;
@@ -163,13 +165,14 @@ future applicants.  Thank you!  Happy coding!
 	border-radius: 3px;
 }
 
-/* Placeholders for donation input box */
-
+/* Placeholder for donation input box */
   ::placeholder {
 	font-size: 16px;
-	font-weight: 900px;
+	font-weight: 1000px;
 	padding: 5px;
 	color: #424242;
+	font-family: 'Poppins', sans-serif;
+
   }
 
 
@@ -182,6 +185,7 @@ a {
 	margin: 15px 0px 0px 0px;
 }
 
+/* hover over link */
 a:hover{
 	color: #EF5F3C;
 }
@@ -195,6 +199,7 @@ a:hover{
 	margin-right: 160px;
 }
 
+/* Call to action buttons */
 .callToActionButton{
 	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
 	border: 1.5px solid #eaeaea;
